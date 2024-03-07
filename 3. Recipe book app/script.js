@@ -5,9 +5,8 @@ let recipeListElm = document.querySelector("#recipe-list");
 
 function displayRecipes(recipes){
 
-    // we are going to empty our ul HTML first
-    
-    recipeListElm.innerHTML = "";
+    // we are going to empty our ul HTML first(if nnot comment on html files)
+    // recipeListElm.innerHTML = "";
 
     // now we use for each method for all the array comes from api 
     // bec of recipe has array of object for that we use array methods.
@@ -42,8 +41,6 @@ function displayRecipes(recipes){
         
     });
 }
-
-
 
 async function getRecipes(){
     try{
