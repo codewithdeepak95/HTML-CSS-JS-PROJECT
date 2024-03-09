@@ -12,7 +12,7 @@ function rollDice() {
 }
 
 function updateRollHistory(){
-    // rollHistoryElm.innerHTML = "";
+    rollHistoryElm.innerHTML = "";
     for(let i = 0;  i < historyList.length; i++){
         const listItem = document.createElement("li");
         listItem.innerHTML = `Roll ${i + 1}: <span>${getDiceFace(historyList[i])}</span>`
@@ -44,34 +44,3 @@ btn.addEventListener("click", () => {
     }, 1000);
     rollDice();
 });
-
-
-
-
-
-
-
-// let dice = document.querySelector("#dice");
-//     let ul = document.querySelector(".history");
-//     let num = Math.floor(Math.random() * 6) + 1;
-//     switch (num) {
-//         case 1:
-//             dice.innerHTML = "&#9856;";
-//             roll(dice.innerHTML);
-//             break;
-//         case 2:
-//             dice.innerHTML = "&#9857;";
-//             break;
-//         case 3:
-//             dice.innerHTML = "&#9858;";
-//             break;
-//         case 4:
-//             dice.innerHTML = "&#9859;";
-//             break;
-//         case 5:
-//             dice.innerHTML = "&#9860;";
-//             break;
-//         case 6:
-//             dice.innerHTML = "&#9861;";
-//             break;
-//     }
